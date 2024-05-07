@@ -8,17 +8,19 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            DateTime testInput = new DateTime(2025, 5, 7);
             IDateFunction dateFunction = new DateFunction();
-            dateFunction.GetNextMonthDateCount(testInput);
-
-            int[] arrayInput = [1, 2, 3, 4, 5, 6, 7, 8];
             IArrayFunction arrayFunction = new ArrayFunction();
-            arrayFunction.AddOnlyOdd(arrayInput);
+            INameFunction nameFunction = new NameFunction();
 
+            DateTime testInput = new DateTime(2025, 5, 7);
+            int[] arrayInput = [1, 2, 3, 4, 5, 6, 7, 8];
             string[] nameInput = ["Sandro", "Indra"];
             string[] secondNameInput = ["Mawar", "Melati", "Indra"];
-            INameFunction nameFunction = new NameFunction();
+            
+            dateFunction.GetNextMonthDateCount(testInput);
+
+            arrayFunction.AddOnlyOdd(arrayInput);
+
             nameFunction.UniqueNames(nameInput, secondNameInput);
         }
     }
