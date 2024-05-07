@@ -8,6 +8,6 @@ namespace ConsoleApp3.Interfaces
 {
     internal interface IArrayFunction
     {
-        void AddOnlyOdd(int[] ints);
+        int AddOnlyOdd(int[] ints);
     }
 }

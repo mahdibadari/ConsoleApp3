@@ -4,7 +4,7 @@ namespace ConsoleApp3.Function
 {
     internal class NameFunction(): INameFunction
     {
-        public void UniqueNames(string[] firstArray, string[] secondArray)
+        public string UniqueNames(string[] firstArray, string[] secondArray)
         {
             var result = new List<string>();
             foreach (var name in firstArray)
@@ -23,7 +23,7 @@ namespace ConsoleApp3.Function
             }
             var arrayResult = result.ToArray();
             var stringResult = String.Join(", ", arrayResult);
-            Console.WriteLine("Unique name(s) in these input arrays: {0}", stringResult);
+            return stringResult;            
         }
     }
 }

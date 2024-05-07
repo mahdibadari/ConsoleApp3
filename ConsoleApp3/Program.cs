@@ -16,10 +16,14 @@ namespace ConsoleApp3
             int[] arrayInput = [1, 2, 3, 4, 5, 6, 7, 8, 9];
             string[] nameInput = ["Sandro", "Indra"];
             string[] secondNameInput = ["Mawar", "Melati", "Indra"];
-            
-            dateFunction.GetNextMonthDateCount(testInput);
-            arrayFunction.AddOnlyOdd(arrayInput);
-            nameFunction.UniqueNames(nameInput, secondNameInput);
+
+            var lastDay =  dateFunction.GetNextMonthDateCount(testInput);
+            var sum = arrayFunction.AddOnlyOdd(arrayInput);
+            var nameResult = nameFunction.UniqueNames(nameInput, secondNameInput);
+
+            Console.WriteLine("Sum of all odd numbers: {0}",sum);
+            Console.WriteLine("Unique name(s) in these input arrays: {0}", nameResult);
+            Console.WriteLine("Maximum date of next month based on input date: {0}", lastDay);
         }
     }
 }

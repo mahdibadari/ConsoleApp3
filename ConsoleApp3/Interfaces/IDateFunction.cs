@@ -8,6 +8,6 @@ namespace ConsoleApp3.Interfaces
 {
     internal interface IDateFunction
     {
-        void GetNextMonthDateCount(DateTime date);
+        int GetNextMonthDateCount(DateTime date);
     }
 }

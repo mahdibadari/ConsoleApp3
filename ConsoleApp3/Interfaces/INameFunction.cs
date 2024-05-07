@@ -8,6 +8,6 @@ namespace ConsoleApp3.Interfaces
 {
     internal interface INameFunction
     {
-        void UniqueNames(string[] firstArray, string[] secondArray);
+        string UniqueNames(string[] firstArray, string[] secondArray);
     }
 }
