@@ -23,7 +23,7 @@ namespace ConsoleApp3.Function
             }
             var arrayResult = result.ToArray();
             var stringResult = String.Join(", ", arrayResult);
-            Console.WriteLine(stringResult);
+            Console.WriteLine("Unique name(s) in these input arrays: {0}", stringResult);
         }
     }
 }

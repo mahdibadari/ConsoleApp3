@@ -15,7 +15,7 @@ namespace ConsoleApp3.Function
                     sum += i;
                 }
             }
-            Console.WriteLine(sum);
+            Console.WriteLine("Sum of all odd numbers: {0}",sum);
         }
     }
 }

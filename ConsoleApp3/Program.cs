@@ -13,7 +13,7 @@ namespace ConsoleApp3
             INameFunction nameFunction = new NameFunction();
 
             DateTime testInput = new(2025, 5, 7);
-            int[] arrayInput = [1, 2, 3, 4, 5, 6, 7, 8];
+            int[] arrayInput = [1, 2, 3, 4, 5, 6, 7, 8, 9];
             string[] nameInput = ["Sandro", "Indra"];
             string[] secondNameInput = ["Mawar", "Melati", "Indra"];
             

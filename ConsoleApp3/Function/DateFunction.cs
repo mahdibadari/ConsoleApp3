@@ -11,7 +11,7 @@ namespace ConsoleApp3.Function
             var twoMontshAhead = firstDayofMonth.AddMonths(2);
             var lastDayofOneMonthAhead = twoMontshAhead.AddDays(-1);
 
-            Console.WriteLine(lastDayofOneMonthAhead.Day);
+            Console.WriteLine("Maximum date of next month based on input date: {0}",lastDayofOneMonthAhead.Day);
         }
     }
 }
