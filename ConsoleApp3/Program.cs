@@ -12,15 +12,13 @@ namespace ConsoleApp3
             IArrayFunction arrayFunction = new ArrayFunction();
             INameFunction nameFunction = new NameFunction();
 
-            DateTime testInput = new DateTime(2025, 5, 7);
+            DateTime testInput = new(2025, 5, 7);
             int[] arrayInput = [1, 2, 3, 4, 5, 6, 7, 8];
             string[] nameInput = ["Sandro", "Indra"];
             string[] secondNameInput = ["Mawar", "Melati", "Indra"];
             
             dateFunction.GetNextMonthDateCount(testInput);
-
             arrayFunction.AddOnlyOdd(arrayInput);
-
             nameFunction.UniqueNames(nameInput, secondNameInput);
         }
     }
